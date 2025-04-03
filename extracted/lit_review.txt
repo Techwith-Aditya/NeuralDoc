@@ -1,0 +1,150 @@
+
+
+        You are an AI model designed to generate a well-structured Literature Review section in IEEE format based on given references. Your task is to synthesize the key findings, methodologies, and contributions of the provided papers while maintaining an academic writing style.
+
+        Instructions:
+        - Summarize Key Findings - Extract and summarize relevant insights from each reference, ensuring that similar studies are grouped logically.
+        - Cite Properly - Use IEEE citation format, e.g., "Handwriting digit recognition has been extensively studied using neural networks [1]."
+        - Maintain Logical Flow - Organize the literature review into a coherent structure, categorizing related studies.
+        - Use Formal Language - Ensure the text aligns with academic writing standards and maintains objectivity.
+        - Avoid Direct Copying - Rewrite and paraphrase information in a scholarly manner.
+        Example Input:
+        [1] Abu Ghosh, M.M., & Maghari, A.Y. (2017). A Comparative Study on Handwriting Digit Recognition Using Neural Networks. *IEEE*.  
+        [2] Alizadeh, S., & Fazel, A. (2017). Convolutional Neural Networks for Facial Expression Recognition. *Computer Vision and Pattern Recognition*. Cornell University Library.
+        Expected Output:
+        
+        Handwriting digit recognition has been widely explored using neural networks. Abu Ghosh and Maghari [1] conducted a comparative analysis of different neural network architectures, demonstrating that convolutional neural networks (CNNs) outperform traditional multilayer perceptron models in terms of accuracy and robustness. Their study highlights the importance of feature extraction and layer depth in achieving high classification performance.
+
+        Similarly, CNNs have also been applied to facial expression recognition. Alizadeh and Fazel [2] proposed a deep learning approach that utilizes convolutional layers to automatically extract features from facial images, achieving state-of-the-art accuracy. Their work underscores the effectiveness of deep networks in recognizing complex patterns in visual data.
+
+        By leveraging CNNs, both studies demonstrate the adaptability of deep learning in computer vision applications, reinforcing the need for optimized architectures tailored to specific recognition tasks.
+
+        Note:  Do not include text like I understand or here is your summary and Do not mension heading at start.
+               Do not mention multiple i.e. more then one reference together eg [3, 4] or [1, 5 , 9] is not allowed.
+
+        INPUT:
+        [1]  Ciresan, D., Meier, U., & Schmidhuber, J. (2012). Multi-column deep neural networks for image classification. In *Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on* (pp. 3642–3649). IEEE.
+[2]  Ciresan, D. C., Giusti, A., Gambardella, L. M., & Schmidhuber, J. (2013). Mitosis detection in breast cancer histology images with deep neural networks. In *Medical Image Computing and Computer-Assisted Intervention–MICCAI 2013* (pp. 411–418). Springer.
+[3]  Ciresan, D. C., Meier, U., Masci, J., Gambardella, L. M., & Schmidhuber, J. (2011). Flexible, high performance convolutional neural networks for image classification. In *IJCAI Proceedings-International Joint Conference on Artificial Intelligence*, *22*(1), 1237.
+[4]  Ciresan, D. C., Meier, U., Gambardella, L. M., & Schmidhuber, J. (2011). Convolutional neural network committees for handwritten character classification. In *Document Analysis and Recognition (ICDAR), 2011 International Conference on* (pp. 1135–1139). IEEE.
+[5]  Egmont-Petersen, M., de Ridder, D., & Handels, H. (2002). Image processing with neural networks: a review. *Pattern Recognition*, *35*(10), 2279–2301.
+[6]  Farabet, C., Martini, B., Akselrod, P., Talay, S., LeCun, Y., & Culurciello, E. (2010). Hardware accelerated convolutional neural networks for synthetic vision systems. In *Circuits and Systems (ISCAS), Proceedings of 2010 IEEE International Symposium on* (pp. 257–260). IEEE.
+[7]  Hinton, G. (2010). A practical guide to training restricted boltzmann machines. *Momentum*, *9*(1), 926.
+[8]  Hinton, G. E., Srivastava, N., Krizhevsky, A., Sutskever, I., & Salakhutdinov, R. R. (2012). Improving neural networks by preventing co-adaptation of feature detectors. *arXiv preprint arXiv:1207.0580*.
+[9]  Ji, S., Xu, W., Yang, M., & Yu, K. (2013). 3D convolutional neural networks for human action recognition. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, *35*(1), 221–231.
+[10] Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., & Fei-Fei, L. (2014). Large-scale video classification with convolutional neural networks. In *Computer Vision and Pattern Recognition (CVPR), 2014 IEEE Conference on* (pp. 1725–1732). IEEE.
+[11]  Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). Imagenet classification with deep convolutional neural networks. In *Advances in neural information processing systems* (pp. 1097–1105).
+[12] LeCun, Y., Boser, B., Denker, J. S., Henderson, D., Howard, R. E., Hubbard, W., & Jackel, L. D. (1989). Backpropagation applied to handwritten zip code recognition. *Neural computation*, *1*(4), 541–551.
+[13] LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. *Proceedings of the IEEE*, *86*(11), 2278–2324.
+[14] Nebauer, C. (1998). Evaluation of convolutional neural networks for visual recognition. *IEEE Transactions on Neural Networks*, *9*(4), 685–696.
+[15] Simard, P. Y., Steinkraus, D., & Platt, J. C. (2003). Best practices for convolutional neural networks applied to visual document analysis. In *null* (p. 958). IEEE.
+[16] Srivastava, N. (2013). *Improving neural networks with dropout*. PhD thesis, University of Toronto.
+[17] Szarvas, M., Yoshizawa, A., Yamamoto, M., & Ogata, J. (2005). Pedestrian detection with convolutional neural networks. In *Intelligent Vehicles Symposium, 2005. Proceedings. IEEE* (pp. 224–229). IEEE.
+[18] Szegedy, C., Toshev, A., & Erhan, D. (2013). Deep neural networks for object detection. In *Advances in Neural Information Processing Systems*.
+[19] Tivive, F. H. C., & Bouzerdoum, A. (2003). A new class of convolutional neural networks (siconnets) and their application of face detection. In *Neural Networks, 2003. Proceedings of the International Joint Conference on*, *3*, 2157–2162. IEEE.
+[20] Zeiler, M. D., & Fergus, R. (2013). Stochastic pooling for regularization of deep convolutional neural networks. *arXiv preprint arXiv:1301.3557*.
+[21] Zeiler, M. D., & Fergus, R. (2014). Visualizing and understanding convolutional networks. In *Computer Vision–ECCV 2014* (pp. 818–833). Springer.
+[22]  Cheng, Q., Qu, S., & Lee, J. (2022). 72-3: Deep Learning Based Visual Defect Detection in Noisy and Imbalanced Data. *SID Symposium Digest of Technical Papers*, *53*(1), 971–974.
+[23] Cheng, Q., Zhang, C., & Shen, X. (2022). Estimation of Energy and Time Usage in 3D Printing With Multimodal Neural Network. *2022 4th International Conference on Frontiers Technology of Information and Computer (ICFTIC)*, 900–903.
+[24] Xing, J. (2024). Enhancing Link Prediction with Fuzzy Graph Attention Networks and Dynamic Negative Sampling. *arXiv preprint arXiv:2411.07482*.
+[25] Veličković, P., Cucurull, G., Casanova, A., Romero, A., Lio, P., & Bengio, Y. (2017). Graph attention networks. *arXiv preprint arXiv:1710.10903*.
+[26] Hamilton, W., Ying, Z., & Leskovec, J. (2017). Inductive representation learning on large graphs. In *Advances in neural information processing systems 30*.
+[27] Xing, J., Gao, C., & Zhou, J. (2022). Weighted fuzzy rough sets-based tri-training and its application to medical diagnosis. *Applied Soft Computing*, *124*, 109025.
+[28] Gao, C., Zhou, J., Xing, J., & Yue, X. (2022). Parameterized maximum-entropy-based three-way approximate attribute reduction. *International Journal of Approximate Reasoning*, *151*, 85–100.
+[29] Xing, J., Xing, R., & Sun, Y. (2024). FGATT: A Robust Framework for Wireless Data Imputation Using Fuzzy Graph Attention Networks and Transformer Encoders. *arXiv preprint arXiv:2412.01979*.
+[30] Livingstone, S. R., & Russo, F. A. (2018). The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). *PloS one*, *13*(5), e0196391.
+[31] Xing, J., Luo, D., Cheng, Q., Xue, C., & Xing, R. (2024). Multi-view Fuzzy Graph Attention Networks for Enhanced Graph Learning. *arXiv preprint arXiv:2412.17271*.
+[32] Heigold, G., Moreno, I. L., Bengio, S., & Shazeer, N. (2016). End-to-End Text-Dependent Speaker Verification. In *Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)* (pp. 5115–5119).
+[33] Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural computation*, *9*(8), 1735–1780.
+[34] Gers, F. A., Schmidhuber, J., & Cummins, F. (2000). Learning to forget: Continual prediction with LSTM. *Neural computation*, *12*(10), 2451–2471.
+[35] Andén, J., & Mallat, S. (2014). Deep scattering spectrum. *IEEE Transactions on Signal Processing*, *62*(16), 4114–4128.
+[36] Bruna, J., & Mallat, S. (2013). Invariant scattering convolution networks. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, *35*(8), 1872–1886.
+[37] Cortes, C., & Vapnik, V. (1995). Support-vector networks. *Machine learning*, *20*(3), 273–297.
+[38] Bruna Estrach, J. (n.d.). Scattering representations for recognition.
+[39] Kaiser, G. (1994). *A friendly guide to wavelets*.
+[40] LeCun, Y., Denker, J. S., Henderson, D., Howard, R. E., Hubbard, W., Jackel, L. D., & Boser, B. (1990). Handwritten digit recognition with a back-propagation network. In *Advances in neural information processing systems*.
+[41] Mallat, S. (2012). Group invariant scattering. *Communications on Pure and Applied Mathematics*, *65*(10), 1331–1398.
+[42] Mallat, S. (2016). Understanding deep convolutional networks. *arXiv preprint arXiv:1601.04920*.
+[43] Balasubramanian, K., Fan, J., & Yang, Z. (2018). Tensor methods for additive index models under discordance and heterogeneity. *arXiv preprint arXiv:1807.06693*.
+[44] Bauer, B., & Kohler, M. (2019). On deep learning as a remedy for the curse of dimensionality in nonparametric regression. *The Annals of Statistics*, *47*(6), 2261–2285.
+[45] Bauer, F., Pereverzev, S., & Rosasco, L. (2007). On regularization algorithms in learning theory. *Journal of Complexity*, *23*(1), 52–72.
+[46] Breymann, W., & Lüthi, D. (2013). ghyp: A package on generalized hyperbolic distributions. *Manual for R Package ghyp*.
+[47] Candès, E. J., Li, X., Ma, Y., & Wright, J. (2009). Robust principal component analysis? *arXiv preprint arXiv:0912.3599*.
+[48] Zou, C., & Zhang, W. (2022). Estimation of low rank high-dimensional multivariate linear models for multi-response data. *Journal of the American Statistical Association*, *117*(537), 693–703.
+[49] Chen, K., Dong, H., & Chan, K.-S. (2012). Reduced rank regression via adaptive nuclear norm penalization. *arXiv preprint arXiv:1201.0381*.
+[50] Chen, X., Zou, C., & Cook, R. D. (2010). Coordinate-independent sparse sufficient dimension reduction and variable selection. *The Annals of Statistics*, *38*(6), 3696–3723.
+[51] Damian, A., Lee, J., & Soltanolkotabi, M. (2022). Neural networks can learn representations with gradient descent. In *Conference on Learning Theory*.
+[52] Friedman, J. H., & Stuetzle, W. (1981). Projection pursuit regression. *Journal of the American Statistical Association*, *76*(376), 817–823.
+[53] Zou, H., & Tibshirani, R. (2006). Sparse principal component analysis. *Journal of Computational and Graphical Statistics*, *15*(2), 265–286.
+[54] Hyvärinen, A., & Dayan, P. (2005). Estimation of non-normalized statistical models by score matching. *Journal of Machine Learning Research*, *6*(1), 695–709.
+[55] Janzamin, M., Sedghi, H., & Anandkumar, A. (2014). Score function features for discriminative learning: Matrix and tensor framework. *arXiv preprint arXiv:1412.2863*.
+[56] Kobak, D., Bernaerts, Y., Weis, M. A., Scala, F., Tolias, A. S., & Berens, P. (2021). Sparse reduced-rank regression for exploratory visualisation of paired multivariate data. *Journal of the Royal Statistical Society: Series C (Applied Statistics)*, *70*(4), 980–1000.
+[57] Lee, W., & Liu, Y. (2012). Simultaneous multiple response regression and inverse covariance matrix estimation via penalized gaussian maximum likelihood. *Journal of Multivariate Analysis*, *111*, 241–255.
+[58] Li, K.-C. (1991). Sliced inverse regression for dimension reduction. *Journal of the American Statistical Association*, *86*(414), 316–327.
+[59] Li, K.-C. (1992). On principal hessian directions for data visualization and dimension reduction: Another application of stein's lemma. *Journal of the American Statistical Association*, *87*(418), 1025–1039.
+[60] Li, K.-C., & Duan, N. (1989). Regression analysis under link violation. *The Annals of Statistics*, *17*(3), 1009–1052.
+[61] Li, Y., & Turner, R. E. (2017). Gradient estimators for implicit models. *arXiv preprint arXiv:1705.07107*.
+[62] Lu, Z., Monteiro, R. D., & Yuan, M. (2012). Convex optimization methods for dimension reduction and coefficient estimation in multivariate linear regression. *Mathematical Programming*, *131*(1-3), 163–194.
+[63] Mnih, A., Heess, N., Graves, A., et al. (2014). Recurrent models of visual attention. In *NIPS*.
+[64] Mnih, V., Heess, N., Graves, A., et al. (2014). Recurrent models of visual attention. In *Advances in neural information processing systems*.
+[65] Mnih, V., Heess, N., Graves, A., et al. (2014). Recurrent models of visual attention. In *Advances in neural information processing systems*.
+[66] Makhzani, A., & Frey, B. (2013). K-sparse autoencoders. *arXiv preprint arXiv:1312.5663*.
+[67] Meng, C., Song, Y., Li, W., & Ermon, S. (2021). Estimating high order gradients of the data distribution by denoising. *Advances in Neural Information Processing Systems*, *34*, 25359–25369.
+[68] Mousavi-Hosseini, A., Park, S., Girotti, M., Mitliagkas, I., & Erdogdu, M. A. (2022). Neural networks efficiently learn low-dimensional representations with SGD. *arXiv preprint arXiv:2209.14863*.
+[69] Mukherjee, A., & Zhu, J. (2011). Reduced rank ridge regression and its kernel extensions. *Statistical analysis and data mining: the ASA data science journal*, *4*(6), 612–622.
+[70] O'Rourke, S., Vu, V., & Wang, K. (2018). Random perturbation of low rank matrices: Improving classical bounds. *Linear Algebra and its Applications*, *540*, 26–59.
+[71] Pearson, K. (1901). Liii. on lines and planes of closest fit to systems of points in space. *The London, Edinburgh, and Dublin philosophical magazine and journal of science*, *2*(11), 559–572.
+[72] Rifai, S., Vincent, P., Muller, X., Glorot, X., & Bengio, Y. (2011). Contractive auto-encoders: Explicit invariance during feature extraction. In *Proceedings of the 28th International Conference on Machine Learning*.
+[73] Scala, F., Kobak, D., Bernabucci, M., Bernaerts, Y., Cadwell, C. R., Castro, J. R., Hartmanis, L., Jiang, X., Laturnus, S., Miranda, E., et al. (2021). Phenotypic variation of transcriptomic cell types in mouse motor cortex. *Nature*, *598*(7878), 144–150.
+[74] Shi, J., Sun, S., & Zhu, J. (2018). A spectral approach to gradient estimation for implicit distributions. In *International Conference on Machine Learning*.
+[75] Simon, N., Friedman, J., & Hastie, T. (2013). A blockwise descent algorithm for group-penalized multiresponse and multinomial regression. *arXiv preprint arXiv:1311.6529*.
+[76] Song, Y., & Ermon, S. (2019). Generative modeling by estimating gradients of the data distribution. *Advances in neural information processing systems*, *32*.
+[77] Song, Y., Garg, S., Shi, J., & Ermon, S. (2020). Sliced score matching: A scalable approach to density and score estimation. In *Uncertainty in Artificial Intelligence*.
+[78] Strathmann, H., Sejdinovic, D., Livingstone, S., Szabo, Z., & Gretton, A. (2015). Gradient-free hamiltonian monte carlo with efficient kernel exponential families. *Advances in Neural Information Processing Systems*, *28*, 955–963.
+[79] Tan, K. M., Wang, Z., Zhang, T., Liu, H., & Cook, R. D. (2018). A convex formulation for high-dimensional sparse sliced inverse regression. *Biometrika*, *105*(4), 769–782.
+[80] Vershynin, R. (2018a). *High-dimensional probability: An introduction with applications in data science*, Vol. 47. Cambridge university press.
+[81] Vershynin, R. (2018b). *High-dimensional probability: An introduction with applications in data science*, Vol. 47. Cambridge university press.
+[82] Vincent, P. (2011). A connection between score matching and denoising autoencoders. *Neural computation*, *23*(6), 1661–1674.
+[83] Vincent, P., Larochelle, H., Bengio, Y., & Manzagol, P.-A. (2008). Extracting and composing robust features with denoising autoencoders. In *Proceedings of the 25th International Conference on Machine Learning*.
+[84] Wang, W., Liang, Y., & Xing, E. (2013). Block regularized lasso for multivariate multi-response linear regression. In *Artificial intelligence and statistics*.
+[85] Xu, X. (2020). On the perturbation of the Moore–Penrose inverse of a matrix. *Applied Mathematics and Computation*, *374*, 124920.
+[86] Yang, Z., Balasubramanian, K., & Liu, H. (2017a). High-dimensional non-Gaussian single index models via thresholded score function estimation. In *Proceedings of the 34th International Conference on Machine Learning*, *70*.
+[87] Yang, Z., Balasubramanian, K., Wang, Z., & Liu, H. (2017b). Learning non-Gaussian multi-index model via second-order Stein's method. *Advances in Neural Information Processing Systems*, *30*, 6097–6106.
+[88] Yu, Y., Wang, T., & Samworth, R. J. (2015). A useful variant of the Davis–Kahan theorem for statisticians. *Biometrika*, *102*(2), 315–323.
+[89] Yuan, M., Ekici, A., Lu, Z., & Monteiro, R. (2007). Dimension reduction and coefficient estimation in multivariate linear regression. *Journal of the Royal Statistical Society: Series B (Statistical Methodology)*, *69*(2), 329–346.
+[90] Zhou, Y., Shi, J., & Zhu, J. (2020). Nonparametric score estimators. In *International Conference on Machine Learning*.
+[91] Nicholson, J., & Healey, A. (2008). The present state of autonomous underwater vehicle (AUV) applications and technologies. *Marine Technology Society Journal*, *42*(1), 44–51.
+[92] Griffiths, G. (2002). *Technology and applications of autonomous underwater vehicles*, Vol. 2. CRC Press.
+[93] Miller, P. A., Farrell, J. A., Zhao, Y., & Djapic, V. (2010). Autonomous underwater vehicle navigation. *IEEE Journal of Oceanic Engineering*, *35*(3), 663–678.
+[94] Rudolph, D., & Wilson, T. A. (2012). Doppler velocity log theory and preliminary considerations for design and construction. In *2012 Proceedings of IEEE Southeastcon* (pp. 1–7). IEEE.
+[95] Cohen, N., & Klein, I. (2024). Inertial navigation meets deep learning: A survey of current trends and future directions. *Results in Engineering*, *103565*.
+[96] Zhang, F., Zhao, S., Li, L., & Cao, C. (2025). Underwater DVL Optimization Network (UDON): A Learning-Based DVL Velocity Optimizing Method for Underwater Navigation. *Drones*, *9*(1), 56.
+[97] Liu, P., Wang, B., Li, G., Hou, D., Zhu, Z., & Wang, Z. (2022). Sins/dvl integrated navigation method with current compensation using rbf neural network. *IEEE Sensors Journal*, *22*(14), 14366–14377.
+[98] Topini, E., Fanelli, F., Topini, A., Pebody, M., Ridolfi, A., Phillips, A. B., & Allotta, B. (2023). An experimental comparison of Deep Learning strategies for AUV navigation in DVL-denied environments. *Ocean Engineering*, *274*, 114034.
+[99] Makam, R., Pramuk, M., Thomas, S., & Sundaram, S. (2024). Spectrally Normalized Memory Neuron Network Based Navigation for Autonomous Underwater Vehicles in DVL-Denied Environment. In *OCEANS 2024-Singapore* (pp. 1–6). IEEE.
+[100] Yampolsky, Z., & Klein, I. (2025). DCNet: A data-driven framework for DVL calibration. *Applied Ocean Research*, *158*, 104525.
+[101] Yona, M., & Klein, I. (2024). MissBeamNet: Learning missing Doppler velocity log beam measurements. *Neural Computing and Applications*, *36*(9), 4947–4958.
+[102] Cohen, N., & Klein, I. (2023). Set-transformer BeamsNet for AUV velocity forecasting in complete DVL outage scenarios. In *2023 IEEE Underwater Technology (UT)* (pp. 1–6). IEEE.
+[103] Cohen, N., & Klein, I. (2022). BeamsNet: A data-driven approach enhancing Doppler velocity log measurements for autonomous underwater vehicle navigation. *Engineering Applications of Artificial Intelligence*, *114*, 105216.
+[104] Cohen, N., & Klein, I. (2025). Adaptive Kalman-Informed Transformer. *Engineering Applications of Artificial Intelligence*, *146*, 110221.
+[105] Levy, A., & Klein, I. (2025). Adaptive Neural Unscented Kalman Filter. *arXiv preprint arXiv:2503.05490*.
+[106] Stolero, Y., & Klein, I. (2025). AUV Acceleration Prediction Using DVL and Deep Learning. *arXiv preprint arXiv:2503.16573*.
+[107] Simon, D. (2006). *Optimal state estimation: Kalman, H infinity, and nonlinear approaches*. John Wiley & Sons.
+[108] Bar-Shalom, Y., Li, X. R., & Kirubarajan, T. (2004). *Estimation with applications to tracking and navigation: theory algorithms and software*. John Wiley & Sons.
+[109] Groves, P. (2013). *Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems, Second Edition*. GNSS/GPS, Artech House.
+[110] Farrell, J. (2008). *Aided navigation: GPS with high rate sensors*. McGraw-Hill, Inc.
+[111] Alford, L. (2008). Estimating Extreme Responses Using a Non-Uniform Phase Distribution. *University of Michigan, Ann Arbor, MI, USA*.
+[112] Bertram, V. (2011). *Practical Ship Hydrodynamics, 2nd edition*. Butterworth-Heinemann.
+[113] Bishop, R. C., Belknap, W., Turner, C., Simon, B., & Kim, J. H. (2005). Parametric Investigation on the Influence of GM, Roll Damping, and Above-Water Form on the Roll Response of Model 5613. *Naval Surface Warfare Center Carderock Division, West Bethesda, MD, USA, Technical Report 50-TR-2005/027*.
+[114] Guth, S., & Sapsis, T. (2023). Analytical and Computational Methods for Non-Gaussian Reliability Analysis of Nonlinear Systems Operating in Stochastic Environments. *Massachusetts Institute of Technology, Cambridge, MA, USA*.
+[115] Kim, D-H. (2012). Design Loads Generator: Estimation of Extreme Environmental Loadings for Ship and Offshore Applications. *University of Michigan, Ann Arbor, MI, USA*.
+[116] Levine, M. D., Edwards, S. J., Howard, D., Weems, K., Sapsis, T., & Pipiras, V. (2024). Multi-Fidelity Data-Adaptive Autonomous Seakeeping. *Ocean Engineering*, *292*.
+[117] Levine, M. D., Belenky, V., & Weems, K. M. (2021). Method for Automated Safe Seakeeping Guidance. *Proceedings of the 1st International Conference on the Stability and Safety of Ships and Ocean Vehicles, 2021, Glasgow, UK*.
+[118] Lin, W., & Yue, D. (1990). Numerical Solutions for Large Amplitude Ship Motions in the Time-Domain. *Proceedings of the 18th Symposium on Naval Hydrodynamics, 1990, Ann Arbor, Michigan, USA*.
+[119] Longuet-Higgins, M. S. (1984). Statistical Properties of Wave Groups in a Random Sea State. *Philosophical Transactions of the Royal Society of London A: Mathematical, Physical and Engineering Sciences*, *312*(1521), 219–250.
+[120] Reed, A. M. (2021). Predicting Extreme Loads and the Processes for Predicting Them Efficiently. *Proceedings of the 1st International Conference on the Stability and Safety of Ships and Ocean Vehicles, Glasgow, UK 2021*.
+[121] Shin, Y. S., Belenky, V., Lin, W.-M., & Weems, K. M. (2003). Nonlinear Time Domain Simulation Technology for Seakeeping and Wave-Load Analysis for Modern Ship Design. *SNAME Transactions*, *111*, 557–589.
+[122] Wan, Z. Y., Vlachas, P., Koumoutsakos, P., & Sapsis, T. (2018). Data-assisted Reduced-Order Modeling of Extreme Events in Complex Dynamical Systems. *PLOS ONE*, *13*(5).
+[123] Weems, K., & Wundrow, D. (2013). Hybrid Models for the Fast Time-Domain Simulation of Stability Failures in Irregular Waves with Volume based Calculations for Froude-Krylov and Hydrostatic Forces. *13th International Ship Stability Workshop, Brest, France 2013*.
+
+        

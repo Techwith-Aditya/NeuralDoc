@@ -1,0 +1,58 @@
+{
+    "Methodology": {
+        "cnn1": [
+            {
+                "text": "Convolutional Neural Networks differ to other forms of Artifical Neural Network in that instead of focusing on the entirety of the problem domain, knowledge about the specific type of input is exploited. This in turn allows for a much simpler network architecture to be set up.\n\nThis paper has outlined the basic concepts of Convolutional Neural Networks, explaining the layers required to build one and detailing how best to structure the network in most image analysis tasks.\n\nResearch in the field of image analysis using neural networks has somewhat slowed in recent times. This is partly due to the incorrect belief surrounding the level of complexity and knowledge required to begin modelling these superbly powerful machine learning algorithms. The authors hope that this paper has in some way reduced this confusion, and made the field more accessible to beginners.",
+                "similarity": 0.8373116850852966
+            }
+        ],
+        "cnn3": [
+            {
+                "text": "This section will first discuss our new technique for labeling the positive and negative data sets, before explaining our implementation of the FF algorithm in detail.",
+                "similarity": 0.8417863249778748
+            }
+        ],
+        "cnn5": [
+            {
+                "text": "",
+                "similarity": 0.9286127686500549
+            }
+        ],
+        "pdf2": [
+            {
+                "text": "Next, we briefly showcase the use of our framework for a simple programmatic access to proposed tasks. In Figure 1, we show how practitioners can access our datasets from Python code, automatically downloading them from Zenodo, choosing a representation (in this example a Pytorch Geometric graph) and directly accessing the data in a simple and reproducible fashion. Additionally, by passing a single flag to our loaders, users can choose to execute all processing logic described here to build to build each task from scratch (end-to-end reproducibility).\n\nDue to the rapid advances in the field, we can expect that additional interesting challenges will arise in the near future, complementary to the seven tasks introduced here. Thanks to the modularity of our tool, additional tasks on RNA can be easily integrated in our framework for future releases. This is illustrated in the documentation at rnaglib.org.\n\nBenchmark for RNA 3D Structure Modeling\n\n```python\nfrom rnaglib.tasks import get_task\nfrom rnaglib.representations import GraphRepresentation\n\ntask = get_task(task_id='rna_site',root='example')\ntask.add_representation(GraphRepresentation(framework=\"pyg\"))\ntask.get_split_loaders()\n\nfor batch in task.train_dataloader:\nrna_graph = batch[\"graph\"]\ntarget = rna_graph.y\n```\n\nFigure 1: Obtaining a machine learning-ready split dataset only requires a few lines of code.",
+                "similarity": 0.8403574228286743
+            }
+        ],
+        "pdf4": [
+            {
+                "text": "We consider a nonlinear model of the following form:\n\n$$y_{i,j} = f_j(B^\u22a4x_i) + \\epsilon_{i,j}, j \\in [q], i \\in [n].$$\n\nThroughout the experiment, we fix the rank of B to be r and assume that r is known. The matrix B is generated in two steps: first, we generate B_o \u2208 R^(p\u00d7q), with entries that are i.i.d. samples from a normal distribution N(\u03bc_o, \u03c3_o\u00b2); second, we set B = SVD_l,r (B_o). We consider three different multivariate distributions for the input vectors x: multivariate normal distribution N(0, \u03a3_N), multivariate hyperbolic distribution H_\u03c7,\u03c8(0, \u03a3_H)\u00b9 and multivariate t-distribution t_\u03bd(0, \u03a3_t). Furthermore, we assume that the distributions of x are non-degenerate, meaning the dispersion matrices \u03a3_N, \u03a3_H, and \u03a3_t are all positive definite. The random errors \u03f5_i,j are independently drawn from N(0, \u03c3_\u03f5\u00b2).\n\nWe consider three different mechanisms for generating the link functions. In the first case, we consider linear link functions. Specifically, we let f_j(z) = a_j^\u22a4z, j \u2208 [q].\n\nThen, we investigate two ways of generating nonlinear link functions. We let f_j(z) = a_j^\u22a4m_j(z), j \u2208 [q]\u00b2, where each m_j(\u00b7) represents a certain element-wise nonlinear function, such as sin(x\u22121) and (x\u22121)\u00b3. In the second case, for the first half of q functions, we select various functions m_1, ..., m_q/2. For the second half of q functions, we define m_q/2+j as m_j mod (q/2) + m_j mod (q/2)+1, for j \u2208 [q/2].\n\nFinally, we consider a generalized case of the second one. For the first half of q functions, we choose different functions m_1, ..., m_q/2 as in the second case. For the second half of q functions m_q/2+j, j \u2208 [q/2], we sample j\u2081 uniformly from [q/2] and j\u2082 uniformly from [q/2] \\ {j\u2081}, then we let m_q/2+j := m_j\u2081 + m_j\u2082.\n\nFor details on the parameters and other elementary functions, please refer to Section II.1 of the Supplement.\n\n\u00b9Multivariate hyperbolic distribution is often used in economics, with particular application in the fields of modeling financial markets and risk management. We refer to Section in the Supplement II.2 for more details.\n\n\u00b2For simplicity, we suppose q is even.",
+                "similarity": 0.8294923901557922
+            }
+        ],
+        "cnn2": [
+            {
+                "text": "In this paper, we tried to analyze the properties of convolutional neural networks. A simplified model, the scattering transform was introduced as a first step towards understanding CNN operations. We saw that the feature transformation is built on top of wavelet transforms which separate variations at different scales using a wavelet transform. The analysis of general CNN architectures was not considered in this paper, but even this analysis is only a first step towards a full mathematical understanding of convolutional neural networks.",
+                "similarity": 0.8467366695404053
+            }
+        ],
+        "cnn4": [
+            {
+                "text": "In order to develop a dynamically expanding convolutional neural-network architecture, we need an expansion criteria that triggers when to expand the model. The criteria we use is the natural expansion score as defined in section 2.1.",
+                "similarity": 0.9301211833953857
+            }
+        ],
+        "pdf1": [
+            {
+                "text": "This work introduced a cross-correlation-aware deep INS/DVL fusion framework that integrates the strengths of both data-driven and model-based approaches. First, we built upon a previous work called BeamsNet and showed its robustness to unseen data. Then, by incorporating deep learning-based velocity estimates into an error-state EKF with an explicit cross-covariance model, we achieved a solution that is not only superior in terms of accuracy when compared to the model-based least squares approach but also more consistent and theoretically grounded. The proposed method addresses a critical limitation of traditional EKF formulations, namely the assumption of uncorrelated process and measurement noise, a condition often violated when using data-driven measurements. Our results demonstrate that accounting for these correlations yields improved confidence in state estimates and reduced uncertainty over time.\n\nBeyond its empirical advantages, this approach offers a principled pathway for integrating modern deep learning techniques within the well-established Kalman filtering framework. This synergy is especially crucial in real-time underwater navigation applications, where reliability, robustness, and theoretical soundness are essential for operational success.",
+                "similarity": 0.849423348903656
+            }
+        ],
+        "pdf3": [
+            {
+                "text": "",
+                "similarity": 0.8449831604957581
+            }
+        ]
+    }
+}
