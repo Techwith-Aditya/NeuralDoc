@@ -4,21 +4,25 @@ A production-ready pipeline to transform static PDFs into an interactive knowled
 
 ---
 
-## :rocket: Key Features  
+## Key Features  
 - **Multi-Stage PDF Parsing**  
-  Extract structured text/images using PyMuPDF with layout preservation.  
+  Extract structured text/images using PyMuPDF with layout preservation.
+  
 - **Vector-Powered Knowledge Base**  
   Store semantic embeddings in Milvus for lightning-fast similarity search.  
+
 - **LLM-Augmented Responses**  
   Generate context-aware answers using Google Gemini and prompt engineering.  
+
 - **LaTeX Publishing Pipeline**  
   Auto-convert Markdown to publication-ready PDFs with custom templates.  
+
 - **Enterprise-Grade Containerization**  
   Fully Dockerized services with isolated environments.
 
 ---
 
-## :computer: Getting Started
+## Getting Started
 
 ### Prerequisites
 - Docker Engine 24.0+ & Docker Compose v2.23+  
@@ -30,7 +34,9 @@ A production-ready pipeline to transform static PDFs into an interactive knowled
 git clone https://github.com/Techwith-Aditya/NeuralDoc.git
 cd NeuralDoc
 ```
-## :whale: Containerized Deployment
+---
+
+## Containerized Deployment
 
 1. Start Milvus Vector Database
    ```bash
@@ -44,11 +50,12 @@ cd NeuralDoc
    ```bash
     docker run -p 8501:8501 streamlit_app
     ```
-Access the service at http://localhost:8501.
+4. Access the service at http://localhost:8501.
 
 ---
 
-## :file_folder: Project Structure
+## Project Structure
+```
 NeuralDoc/  
 ├── data/                 # Raw PDF inputs
 ├── extracted/            # Parsed JSON/Markdown chunks
@@ -62,10 +69,10 @@ NeuralDoc/
 ├── llm_prompt.py         # Gemini API integration  
 ├── docker-compose.yml    # Milvus orchestration  
 └── Dockerfile            # Streamlit service container
-
+```
 ---
 
-## :handshake: Contributing
+## Contributing
 - Fork the repository
 - Create a feature branch (git checkout -b feature/your-feature)
 - Submit a Pull Request targeting the main branch
