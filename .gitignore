@@ -3,16 +3,3 @@ __pycache__/
 *.pyc  
 .env  
 volumes/  
-app.py  
-automation.py  
-Dockerfile  
-docker-compose.yml  
-llm_prompt.py  
-newparse.py  
-parse.py  
-parser.py  
-requirements.txt  
-retrieval.py  
-test.py  
-ToLatex.py  
-usegemini.py  
