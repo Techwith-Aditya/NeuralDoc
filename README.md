@@ -1,6 +1,15 @@
 # NeuralDoc :scroll:  
-**Intelligent Document Processing with Semantic Search & Dynamic PDF Generation**
-A production-ready pipeline to transform static PDFs into an interactive knowledge base with AI-powered querying and LaTeX-based PDF regeneration.
+NeuralDoc is a robust application that transforms collections of PDF documents into a structured review paper with minimal effort. Here’s how it works:
+
+- Multi-PDF Ingestion: Users upload multiple PDFs as raw inputs.
+
+- Keyword-Based Similarity Search: A targeted keyword query drives a semantic similarity search, extracting the most relevant content from the dataset.
+
+- Dynamic LaTeX Generation: The extracted content is automatically converted into structured LaTeX code.
+
+- Review Paper PDF Output: Finally, the LaTeX code is compiled into a professionally formatted review paper.
+
+This modular and extensible architecture is tailored for developers and researchers looking to automate document processing, streamline literature reviews, and generate polished academic outputs with ease.
 
 ---
 
@@ -8,17 +17,17 @@ A production-ready pipeline to transform static PDFs into an interactive knowled
 - **Multi-Stage PDF Parsing**  
   Extract structured text/images using PyMuPDF with layout preservation.
   
-- **Vector-Powered Knowledge Base**  
-  Store semantic embeddings in Milvus for lightning-fast similarity search.  
+- **Keyword‑Driven Vector Search**  
+  A user‑supplied keyword triggers a semantic similarity search to pinpoint the most relevant passages.  
 
-- **LLM-Augmented Responses**  
-  Generate context-aware answers using Google Gemini and prompt engineering.  
+- **Automated LaTeX Code Generation**  
+  Transform retrieved content into fully‑formed LaTeX snippets—sections, citations, figures—using a template engine.
 
-- **LaTeX Publishing Pipeline**  
-  Auto-convert Markdown to publication-ready PDFs with custom templates.  
+- **Review Paper PDF Assembly**  
+  Compile the generated LaTeX into a single, publication‑ready review paper PDF with custom styling and bibliographic formatting. 
 
 - **Enterprise-Grade Containerization**  
-  Fully Dockerized services with isolated environments.
+  Package each service (parsing, search, templating, compilation) into isolated Docker containers for easy deployment and scaling.
 
 ---
 
