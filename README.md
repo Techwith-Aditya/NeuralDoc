@@ -11,6 +11,8 @@ NeuralDoc is a robust application that transforms collections of PDF documents i
 
 This modular and extensible architecture is tailored for developers and researchers looking to automate document processing, streamline literature reviews, and generate polished academic outputs with ease.
 
+![Streamlit Docker Screenshot](images/streamlit_docker_screenshot.jpg)
+
 ---
 
 ## Key Features  
